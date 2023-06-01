@@ -1,0 +1,127 @@
+@import url(../styles.css);
+
+html{ 
+    font-family: var(--texto-fuente);
+}
+body{
+    margin: 0;
+    background-color: var(--color-siete);
+}
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    padding: 1.7rem 8rem;
+}
+footer{
+    background-color: var(--color-seis);
+}
+.g_logo{
+    display: flex;
+    align-items: center;
+}
+.demeter{
+    color: var(--color-texto);
+    font-family: var(--texto-fuente-bold);
+    font-size: var(--texto-grande);
+    font-weight: bolder;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+.dot{
+    color: var(--color-uno);
+}
+a{
+    text-decoration: none;
+}
+button{
+    border-radius: 2rem;
+    color: var(--color-texto-light);
+    background-color: var(--color-uno);
+    border: 0;
+    padding: 0.8rem;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+
+}
+.divide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.VAC_a a{
+    font-weight: 500;
+    color: var(--color-texto-gray);
+    font-size: var(--texto-normal);
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.VAC_a a:hover{
+    font-weight: 600;
+    color: var(--color-tres);
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}
+
+
+/* DISEÑOS EXCLUSIVOS PARA REGISTRO */
+#REG_footer{
+    margin-top: 10rem;
+}
+#REG_LeftContainer{
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 4rem;
+}
+#REG_RightContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.REG_label{
+    font-size: var(--texto-normal);
+    font-weight: var(--texto-fuente-bold);
+    color: var(--color-texto);
+    cursor: pointer;
+}
+.REG_input{
+    border: solid 0 var(--color-seis);
+    font-size: var(--texto-normal);
+    border-radius: 1.5rem;
+    background-color: var(--color-seis);
+    color: var(--color-texto-gray);
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 95%;
+}
+.REG_input:focus{
+    color: var(--color-texto);
+    outline: var(--color-uno);
+    outline-style: solid;
+}
+#REG_uperText{
+    font-size: var(--texto-h1);
+    font-weight: 500;
+}
+#REG_bottomText{
+    color: var(--color-texto-gray);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--texto-normal);
+    width: 80%;
+}
+.REG_LinkBottomText{
+    font-weight: 500;
+    color: var(--color-tres);
+    text-decoration: underline;
+}
+#Registrarse_button{
+    font-size: var(--texto-h1);
+    width: 100%;
+}

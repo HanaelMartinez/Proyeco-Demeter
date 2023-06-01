@@ -1,0 +1,388 @@
+@import url(../styles.css);
+
+/*======================================== Generales ========================================*/
+html{
+    font-family: var(--texto-fuente);
+}
+body{
+    margin: 0;
+    background-color: var(--color-siete);
+}
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    padding: 1.7rem 8rem;
+}
+footer{
+    background-color: var(--color-seis);
+}
+.g_logo{
+    display: flex;
+    align-items: center;
+}
+.demeter{
+    color: var(--color-texto);
+    font-family: var(--texto-fuente-bold);
+    font-size: var(--texto-grande);
+    font-weight: bolder;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+.dot{
+    color: var(--color-uno);
+}
+a{
+    text-decoration: none;
+}
+button{
+    border-radius: 2rem;
+    color: var(--color-texto-light);
+    background-color: var(--color-uno);
+    border: 0;
+    padding: 0.8rem;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+.center{
+    text-align: center;
+}
+.search_button{
+    width: 6rem;
+}
+.search_input{
+    width: 18rem;
+}
+.divide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*========================================== VACANTES ==========================================*/
+#VAC_footer{
+    margin-top: -6rem;
+}
+/*=========== Links ===========*/
+.VAC_a a{
+    font-weight: 500;
+    color: var(--color-texto-gray);
+    font-size: var(--texto-normal);
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.VAC_a a:hover{
+    font-weight: 600;
+    color: var(--color-tres);
+    text-decoration: underline;
+}
+
+
+/*=========== Barra Azul ===========*/
+#VAC_container{
+    margin: 0;
+    padding: 1rem;
+    height: 16rem;
+    text-align: center;
+    color: var(--color-texto-light);
+    background-color: var(--color-uno);
+}
+#VAC_container h1{
+    font-size: var(--texto-h1);
+    font-weight: 400;
+}
+
+
+/*=========== Formato general del Form ===========*/
+#VAC_form{
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 4rem 1rem;
+    max-width: 80%;
+    background-color: var(--color-siete);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    top: -12rem;
+}
+.VAC_input, .VAC_textarea{
+    border: solid 0 var(--color-seis);
+    font-size: var(--texto-normal);
+    border-radius: 1.5rem;
+    background-color: var(--color-seis);
+    color: var(--color-texto-gray);
+    padding: 0.8rem;
+    margin: 0.85rem 1rem 0.5rem 0rem;
+}
+.VAC_input:focus, .VAC_textarea:focus{
+    color: var(--color-texto);
+    outline: var(--color-uno);
+    outline-style: solid;
+}
+.VAC_label{
+    font-size: var(--texto-normal);
+    font-weight: var(--texto-fuente-bold);
+    color: var(--color-texto);
+    cursor: pointer;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+/*=========== Acomodo del Form ===========*/
+.VAC_left_group{
+    width: 27rem;
+    margin-right: 3rem;
+}
+.VAC_center_group{
+    width: 13rem;
+    margin-right: 3rem;
+}
+.VAC_right_group{
+    width: 20rem;
+}
+
+
+#Titulo, #Ubicacion{
+    width: 100%;
+}
+#Sueldo, #Contrato{
+    width: 100%;
+}
+#Puesto, #Empresa{
+    width: 100%;
+} 
+
+
+#Descripcion{
+    font-family: var(--texto-fuente);
+    width: 60rem;
+    resize: none;
+}
+#Crear{
+    font-size: var(--texto-h2);
+    width: 40%;
+}
+
+
+/*========================================== CONTACTANOS ==========================================*/
+#CON_footer{
+    margin-top: -6rem;
+}
+/*=========== Barra Azul ===========*/
+.CON_container{
+    /* margin: 0; */
+    padding: 1rem;
+    height: 22rem;
+    text-align: left;
+    color: var(--color-texto-light);
+    background-color: var(--color-uno);
+
+    /* margin-left: 8rem; */
+    /* width: 40rem; */
+    word-wrap: break-word;
+}
+#CON_container_titles{
+    
+}
+.CON_container h1{
+    font-size: 4rem;
+    font-family: var(--texto-fuente-bold);
+    margin-bottom: 0;
+    margin-top: 4rem;
+    font-weight: 500;
+    padding-left: 8rem;
+}
+.CON_container h2{
+    margin-top: 0;
+    font-weight: 400;
+    opacity: 0.95;
+    padding-left: 8rem;
+}
+/*=========== Formato general del Form ===========*/
+#CON_form{
+    text-align: left;
+    position: relative;
+    margin-left: 5rem;
+    padding: 1.5rem 2rem;
+    width: 28rem;
+    background-color: var(--color-siete);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    top: -18rem;
+    right: 8rem;
+    left: 40rem;
+}
+
+#Mensaje, #Email, #Asunto{
+    
+    width: 26rem;
+}
+#Mensaje{
+    font-family: var(--texto-fuente);
+    resize: none;
+}
+#Enviar{
+    font-size: var(--texto-h2);
+    width: 40%;
+}
+
+/*========================================== FEED ==========================================*/
+#F_container_left{
+    padding: 1.5rem;
+    padding-left: 8rem;
+}
+#F_container_right{
+    padding: 1.5rem;
+    padding-right: 8rem;
+}
+
+.f_containter_image{
+    background-image: url(img/background\ feed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+}
+
+
+/*=========== Publicaciones ===========*/
+
+.F_post{
+    text-align: left;
+    padding: 1.5rem;
+    max-width: 100%;
+    height: 20rem;
+    background-color: var(--color-siete);
+    border-radius: 1rem;
+    outline: #134a68;
+    outline-width: 0.1rem;
+    outline-style: solid;
+    margin-bottom: 1.5rem;
+
+}
+.material-symbols-outlined {
+    float: right;
+    cursor: pointer;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 1000,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+.post_title, .post_subtitle{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+.post_title{
+    font-size: 1.75rem;
+}
+.post_subtitle{
+    font-size: var(--texto-h2);
+    font-weight: 500;
+    color: #134a68;
+}
+
+.post_hidden_text {
+    display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+.job_specifications{
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1175ab;
+    display: flex;
+}
+.specification_container{
+    background-color: #cdeeff;
+    width: 10rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0.4rem;
+    margin-right: 0.3rem;
+
+}
+
+.texto{
+    text-align: justify;
+    font-size: var(--texto-normal);
+    color: var(--color-texto-gray);
+    max-height: 8rem;
+    overflow: hidden;
+}
+.leer_mas{
+    margin-top: -1rem;
+    padding: 0;
+    cursor: pointer;
+    color: #1175ab;
+    font-weight: 500;
+    text-decoration: underline;
+    /* float: right; no ali no */
+    float: left;
+}
+.complete_post{
+    display: none;
+    padding: 1.5rem;
+    max-width: 100%;
+    background-color: var(--color-siete);
+    border-radius: 1rem;
+    outline: #134a68;
+    outline-width: 0.1rem;
+    outline-style: solid;
+
+    overflow: visible !important;
+    max-height: none !important;
+
+}
+
+.working_specifications{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-size: var(--texto-h3);
+    font-weight: 420;
+    color: #134a68;
+}
+.postulation_button{
+    font-size: var(--texto-h2);
+    width: 13rem;
+    display: block;
+}
+.post_separator{
+    background-color: black;
+    height: 0.1rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.last_button{
+    margin-top: 4rem;
+}
+
+
+.link_company{
+    font-size: var(--texto-h2);
+    cursor: pointer;
+    color: #1175ab;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.job_salary{
+    font-size: var(--texto-h2);
+    font-weight: 500;
+    color: #134a68;
+    font-size: var(--texto-normal);
+}

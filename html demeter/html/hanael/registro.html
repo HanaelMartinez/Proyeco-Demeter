@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reg.css">
+    <title>Registrate!</title>
+</head>
+<body>
+  <header>
+    <div class="g_logo">
+        <a class="demeter" href="#">Demeter<span class="dot">.</span></a>
+    </div>
+  </header> <!--cabecera-->
+    
+  <section class="divide">
+    <div id="REG_LeftContainer">
+      <p id="REG_uperText">Estas a solo un paso de conseguir tu primer trabajo en tech</p>
+      
+      <form class="REG_form" action="">
+        <div>
+          <label class="REG_label" for="Email">Email</label>
+          <br>
+          <input 
+            class="REG_input"
+            id="Email"
+            name="Email"
+            placeholder="Ingresa tu correo electronico"
+            type="email">
+        </div>
+        
+        <div>
+          <label class="REG_label" for="Nombre_completo">Nombre completo</label>
+          <br>
+          <input 
+            class="REG_input"
+            id="Nombre_completo"
+            name="Nombre completo"
+            placeholder="Ingresa tu nombre completo"
+            type="text">
+        </div>
+        
+        <div>
+          <label class="REG_label" for="">Numero de telefono</label>
+          <br>
+          <input 
+            class="REG_input"
+            id="Num_telefono"
+            name="Numero de telefono"
+            placeholder="Ingresa tu numero de telefono"
+            type="number">
+        </div>
+        
+        <div>
+          <label class="REG_label" for="">Crea una contraseña</label>
+          <br>
+          <input 
+            class="REG_input"
+            id="Contraseña"
+            name="Contraseña"
+            placeholder="Ingresa una contraseña"
+            type="password">
+        </div>
+        
+
+        <p id="REG_bottomText">Al presionar "Registrarse" esta aceptando todos nuestros
+          <a class="REG_LinkBottomText" href="#">Terminos y Condiciones</a>
+        </p>
+        <div class="center">
+          <button id="Registrarse_button" type="submit">Registrarse</button>
+        </div>
+        
+        
+      </form>
+    </div>
+    <div id="REG_RightContainer">
+      <img src="imgYsvg/Registro.png" width="480rem">
+      <div class="center">
+        <p>¿Ya tienes una cuenta? <a class="REG_LinkBottomText" href="#">Inicia Sesión</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="REG_footer">
+    <div class="g_logo">
+      <a class="demeter" href="#">Demeter<span class="dot">.</span></a>
+      <nav class="VAC_a">
+        <a href="#">FAQ</a>
+        <a href="#">TyC</a>
+        <a href="#">Privacidad</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

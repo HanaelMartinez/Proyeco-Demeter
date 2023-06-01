@@ -1,0 +1,273 @@
+@import url("../styles.css");
+
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+html {
+  font-family: var(--texto-fuente);
+}
+body {
+  margin: 0;
+  background-color: var(--color-siete);
+}
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  padding: 1.7rem 8rem;
+}
+footer {
+  position: relative;
+  background-color: var(--color-seis);
+  top: 5rem;
+}
+
+.g_logo {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.demeter {
+  color: var(--color-texto);
+  font-family: var(--texto-fuente-bold);
+  font-size: var(--texto-grande);
+  font-weight: bolder;
+  margin: 0rem 20px 0rem 0rem;
+}
+.dot {
+  color: var(--color-uno);
+}
+a {
+  text-decoration: none;
+}
+.VAC_a a {
+  font-weight: 500;
+  color: var(--color-texto-gray);
+  font-size: var(--texto-normal);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+.home_a{
+  font-size: small;
+}
+.home_a a {
+  font-weight: 600;
+  font-size: var(--texto-normal);
+  cursor: pointer;
+  transition: 0.3 ease;
+  font-weight: 600;
+  color: var(--color-tres);
+  text-decoration: underline;
+}
+.home_a a:hover{
+  font-weight: 500;
+  color: var(--color-texto);
+  text-decoration: underline;
+}
+button {
+  border-radius: 2rem;
+  color: var(--color-texto-light);
+  background-color: var(--color-uno);
+  border: 0;
+  padding: 0.8rem;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 8rem;
+}
+.parteazul {
+  margin: 0;
+  padding: 1rem;
+  height: 10rem;
+  text-align: center;
+  color: var(--color-texto-light);
+  background-color: var(--color-uno);
+}
+
+.seccioncontenido {
+  margin-right: 80px;
+  margin-left: 80px;
+  padding: 1rem;
+  text-align: justify;
+  max-width: 100%;
+  background-color: var(--color-siete);
+  border-radius: 1rem;
+  height: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.25rem;
+  width: 1.25rem;
+  left: 0.15rem;
+  bottom: 0.15rem;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-texto);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.4rem);
+  -ms-transform: translateX(1.4rem);
+  transform: translateX(1.4rem);
+}
+
+.slider.round {
+  border-radius: 5rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.ajustesgenerales {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.ajustesgenerales,
+.switch, .boton1 {
+  float: right;
+}
+
+.boton1{
+  margin-top : 1rem;
+}
+
+.delete, .delete a {
+  text-align: center;
+  color: red;
+}
+.pie{
+  margin: 0% 20%;
+  text-align: center;
+}
+.textohome{
+  margin-top: 5rem;
+  font-size: x-large;
+  margin-left: 15rem;
+  margin-right: 1rem;
+  width: 45%;
+  text-align: left;
+  float: left;
+
+}
+.tet, .tet1{
+  float: left;
+  margin: 0%;
+}
+
+.tet1{
+  margin-left: 10px;
+  color: var(--color-uno);
+}
+
+.cuadrogris{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: var(--color-seis);
+  border-style:dotted;
+  border-color: var(--color-uno);
+  border-width: 3px;
+  border-radius: 1.5rem;
+
+}
+
+.buscador{
+  background-color: var(--color-seis);
+  border-radius: 1rem;
+  height: 2rem;
+  width: 16rem;
+  text-align:start;
+  border-width: 0px;
+  margin-right: 2rem;
+}
+
+.info{
+  background-color: var(--color-seis);
+  border-radius: 1rem;
+  height: 2rem;
+  width: 16rem;
+  text-align:start;
+  border-width: 0px;
+  margin-right: 2rem;
+
+}
+
+.mi_perfil{
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.info_mi_perfil{
+  text-align: left;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.cerrarsesion{
+  margin-top: 2rem;
+  text-align: center;
+  color: red;
+}
+
+
+.boton_user{
+  margin-left: 40%;
+}
+
+.VAC_b, .b {
+  font-weight: 500;
+  color: var(--color-texto-gray);
+  font-size: var(--texto-normal);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+.VAC_b, .c {
+  font-weight: 500;
+  color: var(--color-uno);
+  font-size: var(--texto-normal);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3 ease;
+}

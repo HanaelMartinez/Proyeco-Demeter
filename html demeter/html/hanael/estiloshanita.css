@@ -1,0 +1,160 @@
+@import url(../styles.css);
+
+/*----------------- Inicio de sesión -------------------*/
+
+.body-IS {
+    font-family: var(--texto-fuente);
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+}
+
+
+/*----------------- mine -------------------*/
+
+.header-IS {
+    background-color: var(--color-uno);
+}
+
+.demeter-IS {
+    color: var( --color-texto-light);
+    font-family: var(--texto-fuente-bold);
+    font-size: var(--texto-grande);
+    font-weight: bolder;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+
+.body {
+    background-color: var(--color-siete);
+}
+
+#divazul {
+    background-color: var(--color-uno);
+    height: 50vh;
+}
+
+#divblanco {
+    background-color: var(--color);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.divfloat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-siete);
+    text-align: center;
+    width: 32em;
+    height: 30rem;
+    margin-top: -20rem;
+    border-radius: 23px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.Titulo-inicio-sesion {
+    margin-bottom: 1em;
+    font-weight: 200;
+}
+
+.etiqueta {
+    font-size: var(--texto-normal);
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.input-IS {
+    background-color: var(--color-seis);
+    border: none;
+    border-radius: 23px;
+    padding: 0.8rem;
+    font-size: var(--texto-normal);
+    color: var(--color-texto-gray);
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+input:focus {
+    border: var(--color-uno);
+}
+
+.IS {
+    border-radius: 2em;
+    color: var(--color-texto-light);
+    background-color: var(--color-uno);
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: var(--texto-h2);
+    transition: box-shadow 0.3s ease;
+}
+
+.IS:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.textosss {
+    color: var(--color-texto-gray);
+}
+
+.textosss2 {
+    color: var(--color-uno);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.textosss2:hover {
+    color: var(--color-dos);
+}
+<<<<<<< Updated upstream
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    padding: 1.7rem 8rem;
+}
+footer{
+    background-color: var(--color-seis);
+}
+.g_logo{
+    display: flex;
+    align-items: center;
+}
+.demeter{
+    color: var(--color-texto);
+    font-family: var(--texto-fuente-bold);
+    font-size: var(--texto-grande);
+    font-weight: bolder;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+.dot{
+    color: var(--color-uno);
+}
+a{
+    text-decoration: none;
+}
+.VAC_a a{
+    font-weight: 500;
+    color: var(--color-texto-gray);
+    font-size: var(--texto-normal);
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.VAC_a a:hover{
+    font-weight: 600;
+    color: var(--color-tres);
+    text-decoration: underline;
+}
+=======
+>>>>>>> Stashed changes
